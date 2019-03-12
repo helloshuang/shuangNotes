@@ -17,8 +17,23 @@
 
 ## <span id="js">JS相关</span>
 1. 怎样判断`Array`数据类型，原型方式。
+>Object.prototype.toString.call(obj) // \[Object array\]
 2. 数组相关方法。
 3. 手写`ajax`过程。
+```javascript
+var request;
+if(window.XMLHttpRequest){
+   request=new XMLHttpRequest(); //IE7+,...
+}else{
+  request=new ActiveXObject("Microsoft.XMLHTTP"); //IE6,IE5
+//用XHR发送请求：
+//open(method,url,async) //调用XHR对象，async表示同步还是异步，默认为true(异步)；
+//send(String)   //发送请求。
+
+request.open("POST","create.php",true);
+request.setRequestHeader("Content-type","application/x-www-form-urlencoded");  //必须写在open和send中间
+request.send("name=王大锤&sex=男");
+```
 4. 实现深拷贝。
 5. `get`和`post`的区别。
 6. 实现跨域的方法。
@@ -32,9 +47,8 @@
 ## <span id="react">React、RN相关</span>
 1. `React`生命周期相关。
 2. `React、RN`版本，`React`版本15和16有什么区别。
-3. 做过哪些性能优化。
-4. `Redux`原理。
-5. RN开发中有哪些问题以及解决方案。
-6. `setState`之后发生了哪些操作。
-7. diff算法
+3. `Redux`原理。
+4. RN开发中有哪些问题以及解决方案（[解析](https://www.jianshu.com/p/11f38925f5ad)）。
+5. `setState`之后发生了哪些操作（[解析](https://www.codercto.com/a/46923.html)）。
+6. diff算法（[解析](https://www.jianshu.com/p/fa4ca1fed4cf))。
 
