@@ -69,7 +69,7 @@ Function.prototype.myCall = function(obj,...arg){
 3. `let、const`和`var`的区别，`const`原理。
 
 ## <span id="react">React、RN相关</span>
-1. `React`生命周期相关。
+1. `React`生命周期相关。.
 2. `React、RN`版本，`React`版本15和16有什么区别。
 3. `Redux`原理。([文档](https://www.redux.org.cn/docs/basics/Actions.html))
 4. RN开发中有哪些问题以及解决方案（[解析](https://www.jianshu.com/p/11f38925f5ad)）。
