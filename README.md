@@ -44,28 +44,36 @@ request.send("name=王大锤&sex=男");
 8. `Date`类型格式化成`19:01:01`格式，不足10补0。
 9. 手写代码：找出一个字符串或数字中字符出现次数最多的并返回。
 10. 手写代码：原生`js`实现`Set`类型的`add、remove、has`方法。
-11. webpack相关，优化点。
+11. webpack相关，优化点。([解析](https://segmentfault.com/a/1190000006178770#articleHeader4))（[优化](https://www.jianshu.com/p/3dfae39b68dd)）
 12. 是否接触过`node`
 13. 防抖与节流，手写防抖。
 14. 怎样调用`H5`。
-15. `js`循环机制。
+15. `js`循环机制。（[解析](https://www.cnblogs.com/yqx0605xi/p/9267827.html)）
 16. 三级缓存。
 17. `Immutable`使用
 18. 原型、原型链相关
 19. `new`一个对象的过程。
-
+20. 首先`bind`。
+```javascript
+// 对象上的方法，在调用时，this是指向对象的。函数原型上添加 myCall方法 来模拟call
+Function.prototype.myCall = function(obj,...arg){
+     obj._fn_ = this;//在obj上添加_fn_属性，值是this(要调用此方法的那个函数对象)。
+     obj._fn_(...arg);//在obj上调用函数,那函数的this值就是obj.
+     delete obj._fn_;// 再删除obj的_fn_属性,去除影响.
+ }
+```
 
 ## <span id="js">ES6相关</span>
 1. 给变量通过解构方式赋值。
-2. `fn.bind(this)/this.fn/内部定义function`三者有什么区别，性能方面有差异吗。
+2. `fn.bind(this)、箭头函数、内部定义function`三者有什么区别，性能方面有差异吗。
 3. `let、const`和`var`的区别，`const`原理。
 
 ## <span id="react">React、RN相关</span>
 1. `React`生命周期相关。
 2. `React、RN`版本，`React`版本15和16有什么区别。
-3. `Redux`原理。
+3. `Redux`原理。([文档](https://www.redux.org.cn/docs/basics/Actions.html))
 4. RN开发中有哪些问题以及解决方案（[解析](https://www.jianshu.com/p/11f38925f5ad)）。
 5. `setState`之后发生了哪些操作（[解析](https://www.codercto.com/a/46923.html)）。
 6. `diff`算法（[解析](https://www.jianshu.com/p/fa4ca1fed4cf))。
-7. `pureComponent`
+7. `pureComponent`用法（[解析](https://www.jianshu.com/p/33cda0dc316a)）
 
