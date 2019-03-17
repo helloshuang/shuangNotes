@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>HTML</title>
+    <style type="text/css">
+        * {
+            padding:  0;
+            margin: 0
+        }
+        /*方法一：左边浮动 */
+        /*.content {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .left {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+
+        .right {
+            display: block;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        */
+        /*方法一：左边绝对定位，右边margin-left */
+        /*
+        .content {
+            position: relative;
+        }
+        .left {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+            position: absolute;
+            top: 0;
+        }
+
+        .right {
+            display: block;
+            height: 200px;
+            background-color: yellow;
+            margin-left: 200px;
+        }
+        */
+        /*  方法三:负margin 方法:给自适应元素一个盒子，设置浮动，浮动元素适应父盒子大小，加margin。
+        *  固定元素设置margin：-100% + 浮动*/
+
+        .left {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+            margin-left: -100%;
+        }
+
+        .content {
+            width: 100%;
+            float: left;
+        }
+
+        .right {
+            display: block;
+            height: 200px;
+            background-color: yellow;
+            margin-left: 200px;
+        }
+        /*方法四：flex*/
+        /*
+        .content {
+            display: flex;
+        }
+        .left {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .right {
+            flex: 1;
+            height: 200px;
+            background-color: yellow;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <!--<div class="content">-->
+        <!--<div class="left">左边固定</div>-->
+        <!--<div class="right">右边自适应</div>-->
+    <!--</div>-->
+    <div class="content">
+        <div class="right">右边自适应</div>
+    </div>
+    <div class="left">左边固定</div>
+</body>
+
+</html>
