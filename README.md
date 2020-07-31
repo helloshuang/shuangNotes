@@ -6,7 +6,7 @@
 - [ES6相关](#es6)。
 - [React、RN相关](#react)。
 - [算法相关](#math)。
-- [一些日常笔记](https://github.com/helloshuang/helloshuang/blob/master/js/note.js)。
+- [一些日常笔记](https://github.com/helloshuang/helloshuang/blob/master/js/objectType.js)。
 
 ## <span id="css">CSS相关</span>
 1. `WEB`标准和`W3C`的理解。
@@ -25,22 +25,9 @@
 ## <span id="js">JS相关</span>
 1. 怎样判断`Array`数据类型，原型方式。
 >Object.prototype.toString.call(obj) // \[Object array\]
+2. [对象类型判断](./js/objectType.js)
 2. 数组相关方法。
-3. 手写`ajax`过程。
-```javascript
-var request;
-if(window.XMLHttpRequest){
-   request=new XMLHttpRequest(); //IE7+,...
-}else{
-  request=new ActiveXObject("Microsoft.XMLHTTP"); //IE6,IE5
-//用XHR发送请求：
-//open(method,url,async) //调用XHR对象，async表示同步还是异步，默认为true(异步)；
-//send(String)   //发送请求。
-
-request.open("POST","create.php",true);
-request.setRequestHeader("Content-type","application/x-www-form-urlencoded");  //必须写在open和send中间
-request.send("name=王大锤&sex=男");
-```
+3. [手写`ajax`过程](./js/ajax.js)
 4. 实现深拷贝。
 5. `get`和`post`的区别。
 6. 实现跨域的方法。
@@ -50,29 +37,23 @@ request.send("name=王大锤&sex=男");
 10. 手写代码：原生`js`实现`Set`类型的`add、remove、has`方法。
 11. webpack相关，优化点，单页应用还是多页应用，打包时有什么区别。([解析](https://segmentfault.com/a/1190000006178770#articleHeader4))（[优化](https://www.jianshu.com/p/3dfae39b68dd)）
 12. 是否接触过`node`
-13. 防抖与节流，手写防抖。
+13. [防抖与节流](./js/throttle-and-debounce.js)
 14. 怎样调用`H5`。
 15. `js`循环机制。（[解析](https://www.cnblogs.com/yqx0605xi/p/9267827.html)）
-16. 三级缓存。
+16. 浏览器缓存机制，强缓存和协商缓存。([解析](https://juejin.im/post/6844903838768431118))
 17. `Immutable`使用
 18. 原型、原型链相关
 19. `new`一个对象的过程。
-20. `js`原生实现`bind`。
-```javascript
-// 对象上的方法，在调用时，this是指向对象的。函数原型上添加 myCall方法 来模拟call
-Function.prototype.myCall = function(obj,...arg){
-     obj._fn_ = this;//在obj上添加_fn_属性，值是this(要调用此方法的那个函数对象)。
-     obj._fn_(...arg);//在obj上调用函数,那函数的this值就是obj.
-     delete obj._fn_;// 再删除obj的_fn_属性,去除影响.
- }
-```
+20. [`js`原生实现`bind`](./js/bind.js)
 21. 构造函数和普通函数的区别
-22. es6箭头函数和普通函数bind(this)的区别
+22. this指向，call bind apply，es6箭头函数和普通函数bind(this)的区别
 23. 继承有哪些？优缺点各是什么？（[解析](https://www.cnblogs.com/humin/p/4556820.html)）
 24. es6转成es5用什么，除了babel之外
 25. `instanceof` 和 `typeof` 的实现原理
 26. 闭包，什么场景要用闭包，解决了什么问题（[解析1](https://www.cnblogs.com/langqq/p/9566565.html)，[解析2](https://blog.csdn.net/qq_21132509/article/details/80694517))
 27. 图片预加载和懒加载的实现原理，怎么请求图片资源
+28. 浏览器重排和重绘 [相关](https://juejin.im/entry/6844903453966204936)
+29. ts的好处
 
 ## <span id="js">ES6相关</span>
 1. 给变量通过解构方式赋值。
@@ -100,6 +81,9 @@ Function.prototype.myCall = function(obj,...arg){
 17. `redux`的`store`改变后，如何触发组件`rerender，connect`内部做了什么
 18. `RN`中怎么处理图片
 19. `ref`的用法
+20. `react`、`react-dom`、`react-native`之间的关系，`react-native`做了什么，怎么和`native`交互 [相关文章](http://blog.poetries.top/2019/10/02/rn-yuanli/)
+21. `React`优化，防止组件无用更新，`shouldUpdate`里`state`的值是对象怎么判定更新
+22. `React`组件复用方法的方式，高阶组件有了解吗 [文档](https://zh-hans.reactjs.org/docs/higher-order-components.html)
 
 ## <span id="math">算法相关</span>
 1. [字符串中最长无重复子串](https://github.com/helloshuang/helloshuang/blob/master/js/q1.js)
@@ -107,4 +91,6 @@ Function.prototype.myCall = function(obj,...arg){
 3. 二分法
 4. 实现一个队列类
 5. 实现Array.prototype.filter函数
-5. 实现Function.prototype.bind函数
+6. 实现Function.prototype.bind函数
+7. [模拟`setInterVal`](./js/setInterval.js)
+8. [模拟`setTimeOut`](./js/setTimeout.js)
