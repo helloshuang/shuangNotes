@@ -4,3 +4,4 @@ Function.prototype.myCall = function(obj,...arg){
   obj._fn_(...arg);//在obj上调用函数,那函数的this值就是obj.
   delete obj._fn_;// 再删除obj的_fn_属性,去除影响.
 }
+

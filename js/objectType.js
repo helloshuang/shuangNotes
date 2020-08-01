@@ -1,4 +1,3 @@
-
 let class2type = {}
 'Array Date RegExp Object Error'.split(' ').forEach(e => class2type[ '[object ' + e + ']' ] = e.toLowerCase())
 /**
@@ -22,28 +21,6 @@ let inherit = (function(c,p){
 		c.prototype.constructor = c;
 	}
 })();
-/**
- * call / apply
- * func.call(this, arg1, arg2);
- * func.apply(this, [arg1, arg2])
- */
-function fruits() {}
-fruits.prototype = {
-    color: "red",
-    say: function() {
-        console.log("My color is " + this.color);
-    }
-}
-
-let apple = new fruits;
-apple.say();    //My color is red
-banana = {
-    color: "yellow"
-}
-apple.say.call(banana);     //My color is yellow
-apple.say.apply(banana);    //My color is yellow
-
-
 try {
   console.log(1);
   setTimeout (() => {

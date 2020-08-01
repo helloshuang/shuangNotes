@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3a5bec2b-c7fa-4f15-96c1-d201c52d2ad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/setInterval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/setTimeout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/throttle-and-debounce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/call-apply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/deepClone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/objectType.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objectType.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +39,15 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>var</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>let</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/helloshuang/shuangNotes.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1fRL2dakPqZDbl8Gr5Qw35iP9GP" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -102,12 +118,23 @@
       <workItem from="1552393003507" duration="16777000" />
       <workItem from="1574679134557" duration="99000" />
       <workItem from="1575275764406" duration="5810000" />
-      <workItem from="1596175758337" duration="5249000" />
+      <workItem from="1596175758337" duration="9064000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>

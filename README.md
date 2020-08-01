@@ -28,7 +28,7 @@
 2. [对象类型判断](./js/objectType.js)
 2. 数组相关方法。
 3. [手写`ajax`过程](./js/ajax.js)
-4. 实现深拷贝。
+4. [实现深拷贝](./js/deepClone.js)
 5. `get`和`post`的区别。
 6. 实现跨域的方法。
 7. `join()、split()`的区别。
@@ -44,9 +44,9 @@
 17. `Immutable`使用
 18. 原型、原型链相关
 19. `new`一个对象的过程。
-20. [`js`原生实现`bind`](./js/bind.js)
-21. 构造函数和普通函数的区别
-22. this指向，call bind apply，es6箭头函数和普通函数bind(this)的区别
+20. 构造函数和普通函数的区别
+21. this指向，es6箭头函数和普通函数bind(this)的区别
+22. [call apply](./js/call-apply.js) [`js`原生实现`bind`](./js/bind.js)
 23. 继承有哪些？优缺点各是什么？（[解析](https://www.cnblogs.com/humin/p/4556820.html)）
 24. es6转成es5用什么，除了babel之外
 25. `instanceof` 和 `typeof` 的实现原理
