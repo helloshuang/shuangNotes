@@ -19,17 +19,32 @@
 > 表示层（样式层）：CSS，负责如何显示有关内容 
 > 行为层：JS，负责内容应如何对事件做出反应
 3. [行内元素有哪些，块级元素有哪些](./html/HTML.html)，盒模型。
-> margin => border => padding => content 
-> 普通 盒模型：width/height: content
-> 盒子大小 = content + padding + border + margin
-> 怪异 盒模型：width/height: content + padding + border
+> margin => border => padding => content   
+> 普通 盒模型：width/height: content  
+> 盒子大小 = content + padding + border + margin  
+> 怪异盒模型：width/height: content + padding + border    
 > 盒子大小 = width(content + padding + border) + margin
 4. web语义化，css定位用法。
 5. `xhtml`和`html`有哪些区别。
 6. `css`有哪些引入方式，`link`和`@import`有什么区别。
-7. `rem、px`、百分比布局有什么区别
+> 从属关系：link是html标签，不仅可以加载css文件，@import是css的语法，只能导入样式表，写在style标签中  
+> 加载顺序：link和html同时加载，@import在页面加载完毕后加载  
+> 兼容性：@import是css2.1才有，兼容IE5+，link无兼容性问题
+> DOM：javascript只能控制dom改变link标签引入的样式，@import的样式不能由dom控制
+7. 响应式布局的解决方案`rem`、百分比布局等有什么区别[参考](https://www.jianshu.com/p/ba26509bc5b3)
+> px和视口
+> css像素为web开发者提供，在css中使用的一个抽象单位
+> 物理像素与设备的硬件密度有关
+> 视口：
+> 媒体查询
+> 百分比
+> rem
+> vw/vh
 8. `css`画三角形、梯形。
 9. 定位`fixed`里面套用`absolute`会有什么问题。
+> 元素会相对fixed元素定位，所以也固定在屏幕的固定位置
+> 注意不要flex与fixed/absolute一起使用，可能会发生布局错位的问题
+> 为解决问题可以外层套一层元素使用定位，内部flex
 10. `position: sticky`使用。
 11. 常用的布局，[双栏布局](./html/TwoolumnLayout.html)，左侧固定宽度，右侧自适应，三栏等分布局
 12. flex：1占满剩余空间原理，父元素子元素常用属性([解析](https://www.cnblogs.com/nuannuan7362/p/5823381.html))
