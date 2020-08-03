@@ -21,6 +21,7 @@ let inherit = (function(c,p){
 		c.prototype.constructor = c;
 	}
 })();
+
 try {
   console.log(1);
   setTimeout (() => {

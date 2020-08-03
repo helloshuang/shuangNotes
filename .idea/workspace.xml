@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a5bec2b-c7fa-4f15-96c1-d201c52d2ad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/call-apply.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/deepClone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/transform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/WechatIMG12.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/HighOrderComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/connect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/currying.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/question.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bind.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/objectType.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objectType.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -74,6 +80,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="disabled" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -83,7 +90,8 @@
     <property name="ejs.open.delimiter" value="&lt;%" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imgs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,13 +104,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imgs" />
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -118,7 +127,7 @@
       <workItem from="1552393003507" duration="16777000" />
       <workItem from="1574679134557" duration="99000" />
       <workItem from="1575275764406" duration="5810000" />
-      <workItem from="1596175758337" duration="9064000" />
+      <workItem from="1596175758337" duration="32392000" />
     </task>
     <servers />
   </component>

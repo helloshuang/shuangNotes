@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .item{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: yellowgreen;
+      animation: hor-animation 2s .5s 1;
+      animation-timing-function: cubic-bezier(.13,.89,.94,.07);
+    }
+    .wrapper{
+      animation: ver-animation 2s .5s 1;
+      animation-timing-function: linear;
+    }
+    @keyframes hor-animation {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(400px);
+      }
+    }
+    @keyframes ver-animation {
+      0% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(400px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="item"></div>
+  </div>
+</body>
+</html>
