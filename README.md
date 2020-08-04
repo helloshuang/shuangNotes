@@ -70,9 +70,30 @@
 16. 浏览器缓存机制，强缓存和协商缓存。([解析](https://juejin.im/post/6844903838768431118))
 17. `Immutable`使用
 18. 原型、原型链相关
-19. `new`一个对象的过程。
+19. `new`一个对象的过程[参考](./js/newObject.js)
+> 1. 创建一个空对象  
+> var obj = {};  
+> 2. 设置新对象的constructor属性为构造函数的名称，设置新对象的__proto__属性指向构造函数的prototype对象  
+> obj.__proto__ = ClassA.prototype;  
+> 3. 使用新对象调用函数call，函数中的this呗指向新实例对象  
+> ClassA.call(obj);　　//{}.构造函数();         
+> 4. 若构造函数中返回this或者返回值是基本类型，则返回新实例对象，若返回值是引用类型的值，实际返回值为这个引用类型，且constructor是Object  
 20. 构造函数和普通函数的区别
-21. this指向，es6箭头函数和普通函数bind(this)的区别
+> 构造函数也是普通函数，习惯性首字母大写  
+> 调用方式和作用不一样，构造函数涌过来新建实例对象  
+> 构造函数的函数名和类名相同  
+> 内部用this构造属性和方法
+> 用instanceof可以检查对象是否是一个类的实例 
+21. [this指向](./js/this.js)，es6箭头函数和普通函数bind(this)的区别
+> 箭头函数是匿名函数，不能作为构造函数，不能使用new  
+> 箭头函数不能绑定arguments，用...代替  
+> call时只传一个参数，对this无影响
+> 没有原型prototype属性
+> 普通函数：  
+> this指向直接调用者，非严格模式下，为找到直接调用者，this指向window，严格模式下指向undefined  
+>可以使用call apply bind修改this指向  
+> 箭头函数：
+> 默认之下那个定义它是所处的对象，继承父级this
 22. [call apply](./js/call-apply.js) [`js`原生实现`bind`](./js/bind.js)
 23. 继承有哪些？优缺点各是什么？（[解析](https://www.cnblogs.com/humin/p/4556820.html)）
 24. es6转成es5用什么，除了babel之外
