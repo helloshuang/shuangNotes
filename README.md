@@ -76,15 +76,14 @@
 > 强缓存首部字段： 
 > Expires：过期时间，如果设置了时间，则浏览器会在设置的时间内读取，不再请求  
 > Cache-control：max-age=300，300s内再次请求命中缓存  
-> 协商缓存首部字段：  
-> Last-Modifed/If-Modified-Since和Etag/If-None-Match是分别成对出现的，呈一一对应关系  
-> Etag: 服务器发送给前端，帮助服务器控制Web的缓存验证，s为单位
+> 协商缓存首部字段： Last-Modifed/If-Modified-Since和Etag/If-None-Match是分别成对出现的，呈一一对应关系   
+> Etag: 服务器发送给前端，帮助服务器控制Web的缓存验证，s为单位   
 > If-None-Match：资源过期时，浏览器发现响应头里面有Etag，则再次向服务器请求时带上值为Etag值的字段，服务器进行对比，决定返回200还是304  
-> Last-Modified：浏览器向服务器发送自由最后的修改时间
+> Last-Modified：浏览器向服务器发送自由最后的修改时间  
 > If-Modified-Since：资源过期时，发现响应头具有Last-Modified声明，再次请求时带上此字段，表示请求时间，服务器收到后，与被请求资源的最后修改时间对比，若Last-Modified大，说明改过返回新资源，否则304走缓存  
-> Last-Modifed/If-Modified-Since的时间精度是秒，而Etag可以更精确。
-> Etag优先级是高于Last-Modifed的，所以服务器会优先验证Etag
-> Last-Modifed/If-Modified-Since是http1.0的头字段
+> Last-Modifed/If-Modified-Since的时间精度是秒，而Etag可以更精确。  
+> Etag优先级是高于Last-Modifed的，所以服务器会优先验证Etag  
+> Last-Modifed/If-Modified-Since是http1.0的头字段  
 > 三级缓存：浏览器缓存、CDN边缘节点缓存、CDN源站缓存  
 > 缓存设置：缓存时间设置的过短，CDN边缘节点缓存经常失效，频繁回源，增加了源站负载，访问也慢
 > 时间设置过长，文件更新慢，用户本地缓存不能及时更新，所以要结合业务情况而定
