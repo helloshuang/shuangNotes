@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a5bec2b-c7fa-4f15-96c1-d201c52d2ad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/color.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/transform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/WechatIMG12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/HighOrderComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/connect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/currying.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/question.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/objectType.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/objectType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/connect.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +119,7 @@
       <workItem from="1552393003507" duration="16777000" />
       <workItem from="1574679134557" duration="99000" />
       <workItem from="1575275764406" duration="5810000" />
-      <workItem from="1596175758337" duration="32392000" />
+      <workItem from="1596175758337" duration="41258000" />
     </task>
     <servers />
   </component>

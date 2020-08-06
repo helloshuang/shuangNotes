@@ -66,8 +66,31 @@
 12. 是否接触过`node`
 13. [防抖与节流](./js/throttle-and-debounce.js)
 14. 怎样调用`H5`。
-15. `js`循环机制。（[解析](https://www.cnblogs.com/yqx0605xi/p/9267827.html)）
+15. `js`事件循环机制，event loop。（[解析](https://www.cnblogs.com/yqx0605xi/p/9267827.html)）
 16. 浏览器缓存机制，强缓存和协商缓存。([解析](https://juejin.im/post/6844903838768431118))
+> 强缓存：浏览器不会向服务器发送请求，直接从本地缓存读取文件，返回200
+> from memory cache: 内存读取，关闭浏览器数据不存在
+> from disk cache: 硬盘读取，关闭浏览区依然存在
+> 优先级 memory > disk > 请求网络资源  
+> 协商缓存：向服务器发送请求，服务器根据首部字段判断是否协商缓存，如果命中，返回304冰带上新的首部字段通知浏览器从缓存中读取资源  
+> 强缓存首部字段： 
+> Expires：过期时间，如果设置了时间，则浏览器会在设置的时间内读取，不再请求  
+> Cache-control：max-age=300，300s内再次请求命中缓存  
+> 协商缓存首部字段：  
+> Last-Modifed/If-Modified-Since和Etag/If-None-Match是分别成对出现的，呈一一对应关系  
+> Etag: 服务器发送给前端，帮助服务器控制Web的缓存验证，s为单位
+> If-None-Match：资源过期时，浏览器发现响应头里面有Etag，则再次向服务器请求时带上值为Etag值的字段，服务器进行对比，决定返回200还是304  
+> Last-Modified：浏览器向服务器发送自由最后的修改时间
+> If-Modified-Since：资源过期时，发现响应头具有Last-Modified声明，再次请求时带上此字段，表示请求时间，服务器收到后，与被请求资源的最后修改时间对比，若Last-Modified大，说明改过返回新资源，否则304走缓存  
+> Last-Modifed/If-Modified-Since的时间精度是秒，而Etag可以更精确。
+> Etag优先级是高于Last-Modifed的，所以服务器会优先验证Etag
+> Last-Modifed/If-Modified-Since是http1.0的头字段
+> 三级缓存：浏览器缓存、CDN边缘节点缓存、CDN源站缓存  
+> 缓存设置：缓存时间设置的过短，CDN边缘节点缓存经常失效，频繁回源，增加了源站负载，访问也慢
+> 时间设置过长，文件更新慢，用户本地缓存不能及时更新，所以要结合业务情况而定
+> 不用静态资源类型缓存时间：HTML 3分钟，js、css 10分钟、1天、30天  
+> CDN灰度发布：部分地区部分运营商优先发布，通过验证后再全量发布  
+> 实施：设置特殊vip解析至要灰度的城市运营商，配置单独源站服务器
 17. `Immutable`使用
 18. 原型、原型链相关
 19. `new`一个对象的过程[参考](./js/newObject.js)
