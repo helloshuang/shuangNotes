@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a5bec2b-c7fa-4f15-96c1-d201c52d2ad9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/html/flex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/selector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/arrangement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/combination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/eventLoop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/randomArray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/upStairs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/call-apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/call-apply.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -81,7 +90,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imgs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,7 +126,8 @@
       <workItem from="1552393003507" duration="16777000" />
       <workItem from="1574679134557" duration="99000" />
       <workItem from="1575275764406" duration="5810000" />
-      <workItem from="1596175758337" duration="41589000" />
+      <workItem from="1596175758337" duration="42182000" />
+      <workItem from="1597030759835" duration="4335000" />
     </task>
     <servers />
   </component>
@@ -134,6 +144,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="masterDetails">
     <states>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+    }
+    .flexParent {
+      display: flex;
+    }
+    .flexChild1 {
+      flex: 1;
+      order: 1;
+      background: darksalmon;
+    }
+    .flexChild2 {
+      flex: 2;
+      order: 2;
+      background: yellowgreen;
+    }
+    .flexChild3 {
+      flex: 3;
+      order: 0;
+      background: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+<!--flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前-->
+<div class="flexParent">
+  <span class="flexChild1">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
+  <span class="flexChild2">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
+  <span class="flexChild3">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
+</div>
+</body>
+</html>

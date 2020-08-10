@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .child:nth-of-type(odd) div[title = 'subChild']+p {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+<div>
+<!--  探探：选取第1，3，5，7…个类名为child的元素 中title值为subChild的子元素的相邻兄弟元素-->
+  <div class="child">
+    <div title="sub">sub1</div>
+    <div title="subChild">subChild1</div>
+    <p>child1</p></div>
+  <div class="child">
+    <div title="sub">sub2</div>
+    <div title="subChild">subChild2</div>
+    <p>child2</p></div>
+  <div class="child">
+    <div title="sub">sub3</div>
+    <div title="subChild">subChild3</div>
+    <p>child3</p></div>
+  <div class="child">
+    <div title="sub">sub4</div>
+    <div title="subChild">subChild4</div>
+    <p>child4</p></div>
+  <div class="child">
+    <div title="sub">sub5</div>
+    <div title="subChild">subChild5</div>
+    <p>child5</p></div>
+  <div class="child">
+    <div title="sub">sub6</div>
+    <div title="subChild">subChild6</div>
+    <p>child6</p></div>
+</div>
+</body>
+</html>

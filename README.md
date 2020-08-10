@@ -24,7 +24,7 @@
 > 盒子大小 = content + padding + border + margin  
 > 怪异盒模型：width/height: content + padding + border    
 > 盒子大小 = width(content + padding + border) + margin
-4. web语义化，css定位用法。
+4. web语义化，css定位用法，[css选择器](./html/selector.html)。
 5. `xhtml`和`html`有哪些区别。
 6. `css`有哪些引入方式，`link`和`@import`有什么区别。
 > 从属关系：link是html标签，不仅可以加载css文件，@import是css的语法，只能导入样式表，写在style标签中  
@@ -66,7 +66,7 @@
 12. 是否接触过`node`
 13. [防抖与节流](./js/throttle-and-debounce.js)
 14. 怎样调用`H5`。
-15. `js`事件循环机制，event loop。（[解析](https://www.cnblogs.com/yqx0605xi/p/9267827.html)）
+15. `js`事件循环机制，[event loop](./js/eventLoop.js)。（[解析](https://www.cnblogs.com/yqx0605xi/p/9267827.html)）
 16. 浏览器缓存机制，强缓存和协商缓存。([解析](https://juejin.im/post/6844903838768431118))
 > 强缓存：浏览器不会向服务器发送请求，直接从本地缓存读取文件，返回200
 > from memory cache: 内存读取，关闭浏览器数据不存在
@@ -179,7 +179,7 @@
 22. `React`组件复用方法的方式
 > Render Props、
 > [高阶组件](./js/HighOrderComponent.js)、
-> [react hooks](https://segmentfault.com/a/1190000019223106) (16.8)，在不便携class的情况下使用state及其他React属性
+> [react hooks](https://segmentfault.com/a/1190000019223106) (16.8)，在不编写class的情况下使用state及其他React属性
 
 ## <span id="math">算法相关</span>
 1. [字符串中最长无重复子串](https://github.com/helloshuang/helloshuang/blob/master/js/q1.js)
@@ -190,3 +190,6 @@
 6. 实现Function.prototype.bind函数
 7. [模拟`setInterVal`](./js/setInterval.js)
 8. [模拟`setTimeOut`](./js/setTimeout.js)
+9. [排列](./js/arrangement.js)
+10. [组合](./js/combination.js)
+11. [上台阶问题（斐波那契数列）](./js/upStairs.js)
