@@ -17,5 +17,5 @@ console.log(5)
 new Promise(resolve => {
   console.log(6)
   resolve();
-}) 
+})
 // 5 6 1 2 3 4

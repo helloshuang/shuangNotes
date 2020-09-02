@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>气泡框</title>
+  <style>
+    .tag {
+      width: 300px;
+      height: 100px;
+      border: 5px solid #09F;
+      position: relative;
+      background-color: #FFF;
+      border-radius: 10px;
+    }
+
+    .arrow {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: -40px;
+      left: 100px;
+    }
+
+    .arrow * {
+      display: block;
+      border-width: 20px;
+      position: absolute;
+      border-style: solid dashed dashed dashed;
+      font-size: 0;
+      line-height: 0;
+    }
+
+    .arrow em {
+      border-color: #09F transparent transparent;
+    }
+
+    .arrow span {
+      border-color: #FFF transparent transparent;
+      top: -7px;
+    }
+  </style>
+</head>
+<body>
+<div class="tag">
+  <div class="arrow">
+    <em></em>
+    <span></span>
+  </div>
+  CSS气泡框实现
+</div>
+</body>
+</html>

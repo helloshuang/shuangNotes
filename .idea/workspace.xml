@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a5bec2b-c7fa-4f15-96c1-d201c52d2ad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/flex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/selector.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/arrangement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/combination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/eventLoop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/randomArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/upStairs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/bubble.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/counter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/promise.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/react.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/call-apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/call-apply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/flex.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/flex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/eventLoop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/eventLoop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -99,6 +98,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -127,7 +127,14 @@
       <workItem from="1574679134557" duration="99000" />
       <workItem from="1575275764406" duration="5810000" />
       <workItem from="1596175758337" duration="42182000" />
-      <workItem from="1597030759835" duration="4335000" />
+      <workItem from="1597030759835" duration="9457000" />
+      <workItem from="1597215352866" duration="75000" />
+      <workItem from="1597386199740" duration="66000" />
+      <workItem from="1598235867130" duration="4000" />
+      <workItem from="1598498140207" duration="97000" />
+      <workItem from="1598498379443" duration="284000" />
+      <workItem from="1598498700204" duration="542000" />
+      <workItem from="1598949103535" duration="814000" />
     </task>
     <servers />
   </component>
@@ -145,6 +152,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597040046177">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597040046177" />
   </component>
   <component name="masterDetails">
     <states>

@@ -18,7 +18,7 @@
     .flexChild1 {
       flex: 1;
       order: 1;
-      background: darksalmon;
+      background-color: #432ee3;
     }
     .flexChild2 {
       flex: 2;
@@ -35,9 +35,13 @@
 <body>
 <!--flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前-->
 <div class="flexParent">
-  <span class="flexChild1">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
+  <span style="background-color: #432ee3" class="flexChild1">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
   <span class="flexChild2">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
   <span class="flexChild3">flexChild1,flexChild2,flexChild3分别以1:2:3的比例占据父元素的空间，同时在不改变dom结构的情况下使flexChild3元素排在最前</span>
 </div>
 </body>
+<script>
+  var a = document.getElementsByClassName('flexChild1')[0];
+  console.log(a.style.backgroundColor)
+</script>
 </html>
