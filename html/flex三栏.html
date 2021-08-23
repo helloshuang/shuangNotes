@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    html,
+    body {
+      overflow: hidden;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .clearfix {
+      clear: both;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .center {
+      flex: 1;
+      min-height: 400px;
+      background-color: #FFCC00;
+    }
+    .left {
+      flex: 0 0 200px;
+      min-height: 200px;
+      background-color: blanchedalmond;
+    }
+    .right {
+      flex: 0 0 200px;
+      min-height: 200px;
+      background-color: #669900;
+    }
+  </style>
+</head>
+<body>
+<div class="container clearfix">
+  <div class="left"></div>
+  <div class="center"></div>
+  <div class="right"></div>
+  <img src="https://ci.xiaohongshu.com/31f14ccd-77d9-632c-aaa7-8781702e2b59?imageView2/2/w/1080/format/jpg" alt="">
+</div>
+
+</body>
+</html>
